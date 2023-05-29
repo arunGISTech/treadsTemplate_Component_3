@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./1_BtStrp-CSS and JS files/css-js/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./1_BtStrp-CSS and JS files/icons/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>TREADS Test Leaflet Map Template</title>
+  </head>
+
+  <body>
+    <!-- Section: Main Header with Navbar and Hero-->
+    <div
+      class="container-fluid tr_backgroundMainHeader"
+      aria-roledescription="background color"
+    >
+      <header class="container-fluid container-md">
+        <nav class="nav">
+          <a href="https://treads.cprindia.org"
+            ><img src="./treadsLogo_transparent_1.png" alt="TREADS Logo"
+          /></a>
+          <div
+            class="ms-auto d-none d-md-flex tr_seriesTitle"
+            aria-roledescription="Series title to display on device width >= 768px"
+          >
+            Chronicles of Cooperation
+          </div>
+
+          <!-- Button trigger modal -->
+          <button
+            class="btn btn-outline-secondary ms-auto mb-1"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#shareModal"
+          >
+            <i class="bi bi-share"></i>
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="shareModal"
+            tabindex="-1"
+            aria-labelledby="shareModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1
+                    class="modal-title fs-5 fw-bold text-secondary"
+                    id="shareModalLabel"
+                  >
+                    Share
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <button
+                    class="btn btn-outline-secondary whatsapp"
+                    type="button"
+                  >
+                    <i class="bi bi-whatsapp"></i>
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary twitter"
+                    type="button"
+                  >
+                    <i class="bi bi-twitter"></i>
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary linkedin"
+                    type="button"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </button>
+                  <button
+                    class="btn btn-outline-secondary facebook"
+                    type="button"
+                  >
+                    <i class="bi bi-facebook"></i>
+                  </button>
+                </div>
+                <div class="modal-footer">
+                  <p class="copyText border border-secondary rounded-2">
+                    http://127.0.0.1:5500/Test-3A_StoryMaps-Header/index.html
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary mx-auto"
+                  >
+                    Copy Link
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div
+          class="d-sm-block d-md-none tr_seriesTitleSmallDevice-border tr_seriesTitle py-1"
+          aria-roledescription="Series title to display on device width <= 768px"
+        >
+          Chronicles of Cooperation
+        </div>
+      </header>
+    </div>
+    <!-- Working with Leaflet Map -->
+
+    <div class="px-0 container-fluid trLeafletMap_explore tr_darkBackground">
+      <!-- Please observe the src attribute of the iframe. That is how it works -->
+      <iframe
+        id=""
+        title="Web Map"
+        width="100%"
+        height="100%"
+        src="./qgis2web_2023_05_29-08_20_47_566512/"
+      >
+      </iframe>
+    </div>
+
+    <script src="./1_BtStrp-CSS and JS files/css-js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
